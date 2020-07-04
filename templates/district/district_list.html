@@ -1,0 +1,8 @@
+{% extends 'base.html'%}
+{%block content%}
+<h1>District List</h1>
+{% for dis in district_list  %}
+    <h1><a href="{% url 'district_detail' dis.id %}">{{dis.name}}</a></h1>
+    <hr>
+ {%endfor%}
+{%endblock%}
